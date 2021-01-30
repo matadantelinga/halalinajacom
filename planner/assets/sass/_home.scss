@@ -1,0 +1,33 @@
+#hero-area {
+  .slick-area {
+    .slick-item {
+      min-height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &#slide-1 {
+        background: url(../images/home-slide1.jpg) center top no-repeat;
+        background-size: cover;
+      }
+      &#slide-2 {
+        background: url(../images/home-slide2.jpg) center top no-repeat;
+        background-size: cover;
+      }
+      &#slide-3 {
+        background: url(../images/home-slide3.jpg) center top no-repeat;
+        background-size: cover;
+      }
+
+      .slide-title {
+        font-size: 18px;
+        text-align: center;
+        background-color: #faf4f5;
+        padding: 50px 70px;
+        color: #1f1f1f;
+        max-width: 500px;
+        font-style: italic;
+        margin: 0 auto;
+      }
+    }
+  }
+}
