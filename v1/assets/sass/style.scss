@@ -171,7 +171,7 @@ figure {
   background: $brand-primary;
 }
 
-.fh5co-nav {
+.mnt-nav {
   position: absolute;
   top: 0;
   margin: 0;
@@ -182,7 +182,7 @@ figure {
   @media screen and (max-width: $screen-sm) {
     padding: 20px 0;
   }
-  #fh5co-logo {
+  #mnt-logo {
     font-size: 40px;
     margin: 0;
     padding: 0;
@@ -314,22 +314,22 @@ figure {
 // 	background-repeat: no-repeat;
 // 	position: relative;
 // }
-#fh5co-counter,
-#fh5co-event,
-.fh5co-bg {
+#mnt-counter,
+#mnt-event,
+.mnt-bg {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
 }
-.fh5co-bg {
+.mnt-bg {
   background-position: center center;
   width: 100%;
   float: left;
   position: relative;
 }
 
-.fh5co-video {
+.mnt-video {
   height: 450px;
   overflow: hidden;
   @include border-radius(7px);
@@ -381,7 +381,7 @@ figure {
     }
   }
 }
-.fh5co-cover {
+.mnt-cover {
   height: 900px;
   background-size: cover;
   // background-position: center center;
@@ -397,7 +397,7 @@ figure {
     right: 0;
     background: rgba(0, 0, 0, 0.5);
   }
-  > .fh5co-container {
+  > .mnt-container {
     position: relative;
     z-index: 10;
   }
@@ -414,7 +414,7 @@ figure {
     }
   }
 
-  &.fh5co-cover-sm {
+  &.mnt-cover-sm {
     height: 600px;
     @media screen and (max-width: $screen-sm) {
       height: 400px;
@@ -431,8 +431,8 @@ figure {
   }
 }
 
-#fh5co-counter,
-#fh5co-event {
+#mnt-counter,
+#mnt-event {
   height: 850px;
   float: left;
   .display-t,
@@ -441,7 +441,7 @@ figure {
     display: table;
     width: 100%;
   }
-  .fh5co-heading {
+  .mnt-heading {
     h2 {
       color: $brand-white;
     }
@@ -506,7 +506,7 @@ figure {
   }
 }
 
-#fh5co-counter {
+#mnt-counter {
   height: 600px;
   @media screen and (max-width: $screen-sm) {
     height: auto;
@@ -683,7 +683,7 @@ figure {
 }
 
 // GALLERY
-#fh5co-gallery-list {
+#mnt-gallery-list {
   @include flexwrap;
   @include flex;
   position: relative;
@@ -781,7 +781,7 @@ figure {
   }
 }
 
-.fh5co-social-icons {
+.mnt-social-icons {
   margin: 0;
   padding: 0;
   li {
@@ -801,7 +801,7 @@ figure {
   }
 }
 
-.fh5co-contact-info {
+.mnt-contact-info {
   ul {
     padding: 0;
     margin: 0;
@@ -851,9 +851,9 @@ form {
   }
 }
 
-#fh5co-header,
-#fh5co-counter,
-.fh5co-cover {
+#mnt-header,
+#mnt-counter,
+.mnt-cover {
   .display-tc {
     display: table-cell !important;
     vertical-align: middle;
@@ -900,7 +900,7 @@ form {
     }
   }
 }
-#fh5co-counter {
+#mnt-counter {
   text-align: center;
   .counter {
     font-size: 50px;
@@ -997,15 +997,15 @@ form {
   /* words */
 }
 
-#fh5co-testimonial,
-#fh5co-services,
-#fh5co-started,
-#fh5co-footer,
-#fh5co-event,
-#fh5co-couple-story,
-#fh5co-couple,
-#fh5co-gallery,
-.fh5co-section {
+#mnt-testimonial,
+#mnt-services,
+#mnt-started,
+#mnt-footer,
+#mnt-event,
+#mnt-couple-story,
+#mnt-couple,
+#mnt-gallery,
+.mnt-section {
   padding: 7em 0;
   clear: both;
   @media screen and (max-width: $screen-sm) {
@@ -1013,7 +1013,7 @@ form {
   }
 }
 
-.fh5co-section-gray {
+.mnt-section-gray {
   background: rgba($brand-black, 0.04);
 }
 
@@ -1150,9 +1150,9 @@ form {
   }
 }
 
-.fh5co-heading {
+.mnt-heading {
   margin-bottom: 5em;
-  &.fh5co-heading-sm {
+  &.mnt-heading-sm {
     margin-bottom: 2em;
   }
   h2 {
@@ -1180,7 +1180,7 @@ form {
   }
 }
 
-#fh5co-testimonial {
+#mnt-testimonial {
   .wrap-testimony {
     position: relative;
     .testimony-slide {
@@ -1302,7 +1302,7 @@ form {
   }
 }
 
-#fh5co-started {
+#mnt-started {
   position: relative;
   .overlay {
     position: absolute;
@@ -1312,7 +1312,7 @@ form {
     bottom: 0;
     background: rgba(0, 0, 0, 0.4);
   }
-  .fh5co-heading {
+  .mnt-heading {
     h2 {
       color: $brand-white;
     }
@@ -1370,7 +1370,7 @@ form {
       }
     }
   }
-  .fh5co-heading {
+  .mnt-heading {
     margin-bottom: 30px;
     h2 {
       margin-bottom: 0;
@@ -1378,7 +1378,7 @@ form {
   }
 }
 
-#fh5co-footer {
+#mnt-footer {
   .copyright {
     .pull-left,
     .pull-right {
@@ -1418,7 +1418,7 @@ form {
 }
 
 // off canvas
-#fh5co-offcanvas {
+#mnt-offcanvas {
   position: absolute;
   z-index: 1901;
   width: 270px;
@@ -1523,7 +1523,7 @@ form {
 }
 
 // Burger Menu
-.fh5co-nav-toggle {
+.mnt-nav-toggle {
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -1562,7 +1562,7 @@ form {
       transition: all 0.2s ease-out;
     }
   }
-  &.fh5co-nav-white {
+  &.mnt-nav-white {
     > i {
       color: $brand-white;
       background: $brand-white;
@@ -1574,22 +1574,22 @@ form {
   }
 }
 
-.fh5co-nav-toggle i::before {
+.mnt-nav-toggle i::before {
   top: -7px;
 }
-.fh5co-nav-toggle i::after {
+.mnt-nav-toggle i::after {
   bottom: -7px;
 }
-.fh5co-nav-toggle:hover i::before {
+.mnt-nav-toggle:hover i::before {
   top: -10px;
 }
-.fh5co-nav-toggle:hover i::after {
+.mnt-nav-toggle:hover i::after {
   bottom: -10px;
 }
-.fh5co-nav-toggle.active i {
+.mnt-nav-toggle.active i {
   background: transparent;
 }
-.fh5co-nav-toggle.active i::before {
+.mnt-nav-toggle.active i::before {
   top: 0;
   -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
@@ -1597,7 +1597,7 @@ form {
   -o-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
 }
-.fh5co-nav-toggle.active i::after {
+.mnt-nav-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
@@ -1605,7 +1605,7 @@ form {
   -o-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
 }
-.fh5co-nav-toggle {
+.mnt-nav-toggle {
   position: absolute;
   right: 0px;
   top: 10px;
@@ -1817,7 +1817,7 @@ form {
   padding-bottom: 2em !important;
 }
 
-.fh5co-loader {
+.mntloader {
   position: fixed;
   left: 0px;
   top: 0px;
