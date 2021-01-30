@@ -1808,3 +1808,21 @@ form {
 		opacity: 0;
 	}
 }
+
+.groom {
+	background: url(../images/groom.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150px;
+	width: 150px;
+}
+
+.bride {
+	background: url(../images/bride.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150px;
+	width: 150px;
+}
