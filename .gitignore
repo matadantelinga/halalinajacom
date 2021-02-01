@@ -1,2 +1,6 @@
 /v1/assets/node_modules
 /v2/assets/node_modules
+/planner/assets/node_modules
+/planner/assets/.sass-chache
+/v2/assets/.sass-chache
+/v1/assets/.sass-chache
