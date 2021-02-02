@@ -1,9 +1,11 @@
 /v1/assets/node_modules
 /v2/assets/node_modules
 /v3/assets/node_modules
+/v4/assets/node_modules
 /planner/assets/node_modules
 /planner/assets/.sass-cache
 /v1/assets/.sass-cache
 /v2/assets/.sass-cache
 /v3/assets/.sass-cache
+/v4/assets/.sass-cache
 .DS_Store

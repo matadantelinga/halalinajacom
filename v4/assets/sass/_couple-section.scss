@@ -1,0 +1,84 @@
+// COUPLE
+.couple-wrap {
+  width: 35%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.couple-half {
+  margin: auto;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  .groom,
+  .bride {
+    @include border-radius(50%);
+    // overflow: hidden;
+    // margin-left: 5px;
+    width: 150px;
+    height: 150px;
+
+    img {
+      width: 150px;
+      height: 150px;
+      @include border-radius(50%);
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: 140px;
+
+      img {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .groom,
+  .bride {
+    margin: 0 auto;
+  }
+
+  .groom {
+    background: url(../images/groom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+  }
+
+  .bride {
+    background: url(../images/bride.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+  }
+}
+
+.desc-groom,
+.desc-bride {
+  margin-top: 10px;
+  text-align: center;
+
+  h5 {
+    font-family: $font-decorative;
+    text-transform: capitalize;
+    color: $brand-black;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
