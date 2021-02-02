@@ -2,6 +2,7 @@
   background: url(../images/event-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  filter: grayscale(80%);
   background-size: cover;
   height: 850px;
   padding: 100px;
@@ -40,6 +41,7 @@
     .event-col {
       width: 50%;
       margin-bottom: 30px;
+      float: left;
     }
   }
 }

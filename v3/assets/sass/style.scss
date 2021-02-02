@@ -2,6 +2,7 @@
 
 $font-primary: "Cormorant Garamond", Arial, serif;
 $font-secondary: "Nunito Sans", Arial, serif;
+$font-decorative: "Alex Brush", serif;
 
 // Overrides
 $grid-gutter-width: 40px !default;
@@ -143,9 +144,9 @@ ul {
   }
 }
 
-.section-margin {
-  margin-top: 6em;
-  margin-bottom: 6em
+.section-padding {
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 .section-title {
@@ -165,10 +166,14 @@ ul {
   }
 }
 
+.text-right {
+  text-align: right;
+}
+
 @import "header";
 @import "home";
 @import "event-section";
 @import "couple-section";
 @import "gallery-section";
 @import "Rsvp-section";
-@import "footer-section"
+@import "footer-section";
