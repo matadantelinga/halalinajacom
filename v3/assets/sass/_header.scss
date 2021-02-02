@@ -7,7 +7,6 @@
   border-top: 1px solid #bebebe;
   border-bottom: 1px solid #bebebe;
   position: relative;
-  position: sticky;
   top: 0;
   z-index: 999;
   letter-spacing: 1.5px;
@@ -59,7 +58,7 @@
     }
   }
   .header-logo {
-    margin: 0 auto;
+    margin: 0 5px;
     display: flex;
     align-items: center;
     img {

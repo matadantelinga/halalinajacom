@@ -89,7 +89,7 @@ body {
   font-family: $font-primary;
   font-weight: 400;
   font-size: 18px;
-  line-height: 2;
+  line-height: 1.7;
   color: #828282;
   background: #fff;
 }
@@ -168,3 +168,7 @@ ul {
 @import "header";
 @import "home";
 @import "event-section";
+@import "couple-section";
+@import "gallery-section";
+@import "Rsvp-section";
+@import "footer-section"

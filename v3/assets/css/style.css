@@ -1,4 +1,4 @@
-@import url(../fonts/fonts.css);
+@import "../fonts/fonts.css";
 /* =======================================================
 *
 * 	Template Style 
@@ -8,7 +8,7 @@ body {
   font-family: "Cormorant Garamond", Arial, serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 2;
+  line-height: 1.7;
   color: #828282;
   background: #fff;
 }
@@ -99,7 +99,6 @@ ul li {
   border-top: 1px solid #bebebe;
   border-bottom: 1px solid #bebebe;
   position: relative;
-  position: sticky;
   top: 0;
   z-index: 999;
   letter-spacing: 1.5px;
@@ -160,7 +159,7 @@ ul li {
   display: block;
 }
 .desktop-nav .header-logo {
-  margin: 0 auto;
+  margin: 0 5px;
   display: flex;
   align-items: center;
 }
@@ -196,6 +195,262 @@ ul li {
   max-width: 500px;
   font-style: italic;
   margin: 0 auto;
+}
+
+#event-section {
+  background: url(../images/event-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 850px;
+  padding: 100px;
+}
+#event-section .section-title {
+  color: #fff;
+}
+#event-section .event-wrap {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  width: 100%;
+}
+#event-section .event-wrap h4 {
+  font-size: 20px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: block;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#event-section .event-wrap p,
+#event-section .event-wrap span {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+}
+#event-section .event-wrap i {
+  color: white;
+  font-size: 20px;
+}
+#event-section .event-wrap .event-col {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.couple-wrap {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+  .couple-wrap {
+    width: 100%;
+  }
+}
+
+.heart {
+  position: absolute;
+  top: 4em;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  animation: pulse 1s ease infinite;
+}
+.heart i {
+  font-size: 20px;
+  background: #fff;
+  padding: 20px;
+  color: #f3e1e7;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 767px) {
+  .heart {
+    display: none;
+  }
+}
+
+.couple-half {
+  width: 50%;
+  margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .couple-half {
+    width: 100%;
+  }
+}
+.couple-half h5 {
+  font-family: "Cormorant Garamond", Arial, serif;
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 15px;
+}
+.couple-half .groom,
+.couple-half .bride {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.couple-half .groom img,
+.couple-half .bride img {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 767px) {
+  .couple-half .groom,
+.couple-half .bride {
+    width: 100%;
+    height: 140px;
+  }
+  .couple-half .groom img,
+.couple-half .bride img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
+.couple-half .groom,
+.couple-half .bride {
+  margin: 0 auto;
+}
+.couple-half .desc-groom .desc-bride {
+  margin-top: 10px;
+  text-align: center;
+}
+.couple-half .groom {
+  background: url(../images/groom.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+}
+.couple-half .bride {
+  background: url(../images/bride.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+}
+
+#gallery-section {
+  padding: 7em 0;
+}
+#gallery-section .gallery-item {
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#gallery-section .gallery-item:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#gallery-section .gallery-item .case-studies-summary {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#gallery-section .gallery-item .case-studies-summary h2 {
+  font-size: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 100;
+}
+
+#rsvp-section {
+  position: relative;
+  padding: 7em 0;
+}
+#rsvp-section h2 {
+  color: #000;
+}
+#rsvp-section p {
+  color: rgba(0, 0, 0, 0.5);
+}
+#rsvp-section .form-control {
+  background: rgba(225, 225, 225, 0.2);
+  border: none !important;
+  color: #000000;
+  font-size: 16px !important;
+  width: 100%;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#rsvp-section .form-control:focus {
+  background: rgba(225, 225, 225, 0.3);
+  box-shadow: none !important;
+}
+#rsvp-section .btn {
+  height: 54px;
+  border: none !important;
+  background: #f3e1e7;
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#rsvp-section .form-group {
+  width: 100% !important;
+  margin-bottom: 20px;
+}
+#rsvp-section .form-group .form-control {
+  width: 100%;
+}
+
+#footer-section {
+  padding: 1em 0;
+  background: #000000;
+}
+#footer-section .copyright .block {
+  display: block;
+}
+#footer-section .copyright p {
+  color: #ffffff;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
