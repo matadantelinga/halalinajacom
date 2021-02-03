@@ -1,0 +1,19 @@
+#gallery-section {
+  padding-bottom: 6em;
+  .gallery-item {
+    height: 400px;
+    background-position: center !important;
+    background-size: cover !important;
+    border-radius: 10px;
+    position: relative;
+    -webkit-filter: grayscale(70%);
+    filter: 70%;
+    @include transition(.3s);
+    cursor: pointer;
+
+    &:hover {
+      -webkit-filter: grayscale(0%);
+      filter: 0%;
+    }
+  }
+}

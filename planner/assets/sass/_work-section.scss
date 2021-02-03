@@ -1,0 +1,33 @@
+#work-section {
+  .form-group {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    height: 50px;
+    border: none !important;
+    background: $brand-primary;
+    color: $brand-black;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+  .gallery-item {
+    height: 400px;
+    background-position: center !important;
+    background-size: cover !important;
+    border-radius: 10px;
+    position: relative;
+    -webkit-filter: grayscale(70%);
+    filter: 70%;
+    @include transition(.3s);
+    cursor: pointer;
+
+    &:hover {
+      -webkit-filter: grayscale(0%);
+      filter: 0%;
+    }
+  }
+}

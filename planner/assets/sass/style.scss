@@ -89,7 +89,7 @@ body {
   font-family: $font-primary;
   font-weight: 400;
   font-size: 18px;
-  line-height: 2;
+  line-height: 1.7;
   color: #828282;
   background: #fff;
 }
@@ -143,9 +143,9 @@ ul {
   }
 }
 
-.section-margin {
-  margin-top: 6em;
-  margin-bottom: 6em
+.section-padding {
+  padding-top: 6em;
+  padding-bottom: 6em
 }
 
 .section-title {
@@ -167,3 +167,7 @@ ul {
 
 @import "header";
 @import "home";
+@import "gallery-section";
+@import "client-section";
+@import "work-section";
+@import "contact-section";

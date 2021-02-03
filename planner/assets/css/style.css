@@ -1,4 +1,4 @@
-@import url(../fonts/fonts.css);
+@import "../fonts/fonts.css";
 /* =======================================================
 *
 * 	Template Style 
@@ -8,7 +8,7 @@ body {
   font-family: "Cormorant Garamond", Arial, serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 2;
+  line-height: 1.7;
   color: #828282;
   background: #fff;
 }
@@ -68,9 +68,9 @@ ul li {
   list-style: none;
 }
 
-.section-margin {
-  margin-top: 6em;
-  margin-bottom: 6em;
+.section-padding {
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 .section-title {
@@ -196,6 +196,85 @@ ul li {
   max-width: 500px;
   font-style: italic;
   margin: 0 auto;
+}
+
+#gallery-section {
+  padding-bottom: 6em;
+}
+#gallery-section .gallery-item {
+  height: 400px;
+  background-position: center !important;
+  background-size: cover !important;
+  border-radius: 10px;
+  position: relative;
+  -webkit-filter: grayscale(70%);
+  filter: 70%;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#gallery-section .gallery-item:hover {
+  -webkit-filter: grayscale(0%);
+  filter: 0%;
+}
+
+#client-section {
+  background: #faf4f5;
+}
+#client-section p {
+  text-align: center;
+}
+
+#work-section .form-group {
+  width: 100% !important;
+  margin-bottom: 20px;
+}
+#work-section .btn {
+  height: 50px;
+  border: none !important;
+  background: #f3e1e7;
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-top: 10px;
+}
+#work-section .gallery-item {
+  height: 400px;
+  background-position: center !important;
+  background-size: cover !important;
+  border-radius: 10px;
+  position: relative;
+  -webkit-filter: grayscale(70%);
+  filter: 70%;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#work-section .gallery-item:hover {
+  -webkit-filter: grayscale(0%);
+  filter: 0%;
+}
+
+#contact-section .form-group {
+  width: 100% !important;
+  margin-bottom: 20px;
+}
+#contact-section .btn {
+  height: 50px;
+  border: none !important;
+  background: #f3e1e7;
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-top: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
