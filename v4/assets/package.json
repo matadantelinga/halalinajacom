@@ -1,0 +1,19 @@
+{
+  "name": "halalinaja.com",
+  "version": "1.0.0",
+  "description": "Wedding Invitation Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "indra",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.3.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "sass": "^1.26.11"
+  },
+  "dependencies": {}
+}
