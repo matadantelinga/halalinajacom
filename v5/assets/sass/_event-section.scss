@@ -1,0 +1,48 @@
+#event-section {
+  background-color: $brand-pink;
+  background-size: cover;
+  height: 850px;
+  padding: 90px;
+
+  .wedding-ceremony {
+    img {
+      width: 100%;
+    }
+  }
+  .section-title {
+    color: $brand-white;
+  }
+
+  .event-wrap {
+    background: rgba($brand-white, 1);
+    width: 100%;
+
+    h4 {
+      font-size: 20px;
+      color: $brand-black;
+      display: block;
+      padding: 10px 0px;
+      letter-spacing: 2px;
+      text-align: center;
+      font-style: italic;
+    }
+
+    p,
+    span {
+      display: block;
+      color: rgba($brand-darker, 0.8);
+      text-align: center;
+    }
+
+    i {
+      color: rgba($brand-white, 1);
+      font-size: 20px;
+    }
+
+    .event-col {
+      width: 50%;
+      margin-bottom: 30px;
+      float: left;
+    }
+  }
+}

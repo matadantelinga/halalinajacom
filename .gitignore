@@ -9,3 +9,5 @@
 /v3/assets/.sass-cache
 /v4/assets/.sass-cache
 .DS_Store
+/v5/assets/node_modules
+/v5/assets/.sass-cache
