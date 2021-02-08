@@ -1,4 +1,4 @@
-@import "../fonts/fonts.css";
+@import url(../fonts/fonts.css);
 /* =======================================================
 *
 * 	Template Style 
@@ -90,13 +90,12 @@ ul li {
   margin: 0 auto;
 }
 
-.desktop-nav {
+.navigation-wrapper {
   border-top: 0;
   padding: 10px 0 10px;
   text-transform: uppercase;
   font-size: 14px;
   background-color: #fff;
-  border-top: 1px solid #bebebe;
   border-bottom: 1px solid #bebebe;
   position: relative;
   position: sticky;
@@ -104,7 +103,7 @@ ul li {
   z-index: 999;
   letter-spacing: 1.5px;
 }
-.desktop-nav ul li {
+.navigation-wrapper ul li {
   padding: 0 30px;
   position: relative;
   -moz-transition: all 0.3s ease;
@@ -113,7 +112,7 @@ ul li {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.desktop-nav ul li:hover, .desktop-nav ul li.active {
+.navigation-wrapper ul li:hover, .navigation-wrapper ul li.active {
   background-color: #f3e1e7;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -121,7 +120,7 @@ ul li {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.desktop-nav ul li.has-submenu .desktop-nav__submenu {
+.navigation-wrapper ul li.has-submenu .desktop-nav__submenu {
   margin-top: 0;
   position: absolute;
   top: 100%;
@@ -132,7 +131,7 @@ ul li {
   opacity: 0;
   visibility: hidden;
 }
-.desktop-nav ul li.has-submenu .desktop-nav__submenu li {
+.navigation-wrapper ul li.has-submenu .desktop-nav__submenu li {
   margin-bottom: 15px;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -140,33 +139,81 @@ ul li {
   -ms-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-.desktop-nav ul li.has-submenu .desktop-nav__submenu li:hover {
+.navigation-wrapper ul li.has-submenu .desktop-nav__submenu li:hover {
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-.desktop-nav ul li.has-submenu .desktop-nav__submenu li:hover a {
+.navigation-wrapper ul li.has-submenu .desktop-nav__submenu li:hover a {
   color: #fff;
 }
-.desktop-nav ul li.has-submenu:hover .desktop-nav__submenu {
+.navigation-wrapper ul li.has-submenu:hover .desktop-nav__submenu {
   opacity: 1;
   visibility: visible;
 }
-.desktop-nav ul li a {
+.navigation-wrapper ul li a {
   color: #000;
   margin: 18px 0 16px;
   display: block;
 }
-.desktop-nav .header-logo {
+.navigation-wrapper .header-logo {
   margin: 0 auto;
   display: flex;
   align-items: center;
 }
-.desktop-nav .header-logo img {
+.navigation-wrapper .header-logo img {
   max-width: 100%;
   height: 32px;
+}
+
+.navigation-wrapper .tab-mobile-only {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .navigation-wrapper .desktop-only {
+    display: none;
+  }
+  .navigation-wrapper .tab-mobile-only {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .navigation-wrapper {
+    padding: 15px 0;
+  }
+  .navigation-wrapper .desktop-only {
+    display: none;
+  }
+  .navigation-wrapper .tab-mobile-only {
+    display: block;
+  }
+  .navigation-wrapper .header-logo img {
+    height: 25px;
+  }
+}
+
+#humburgerBtn span {
+  display: block;
+  background: #000;
+  height: 3px;
+  width: 20px;
+  margin-bottom: 3px;
+}
+#humburgerBtn span:last-child {
+  margin-bottom: 0;
+}
+
+#mobileNav {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 #hero-area .slick-area .slick-item {
