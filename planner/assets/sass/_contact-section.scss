@@ -1,0 +1,17 @@
+#contact-section {
+  .form-group {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    height: 50px;
+    border: none !important;
+    background: $brand-primary;
+    color: $brand-black;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 15px;
+  }  
+}

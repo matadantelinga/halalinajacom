@@ -1,0 +1,47 @@
+#event-section {
+  background: url(../images/event-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(80%);
+  background-size: cover;
+  height: 850px;
+  padding: 100px;
+
+  .section-title {
+    color: $brand-white;
+  }
+
+  .event-wrap {
+    border: 2px solid rgba($brand-white, 0.5);
+    background: rgba($brand-white, 0.1);
+    padding: 20px;
+    width: 100%;
+
+    h4  {
+      font-size: 20px;
+      color: $brand-white;
+      border-bottom: 1px solid rgba($brand-white, 0.5);
+      display: block;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  
+    p,
+    span {
+      display: block;
+      color: rgba($brand-white, 0.8);
+    }
+  
+    i {
+      color: rgba($brand-white, 1);
+      font-size: 20px;
+    }
+  
+    .event-col {
+      width: 50%;
+      margin-bottom: 30px;
+      float: left;
+    }
+  }
+}

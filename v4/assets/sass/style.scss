@@ -1,0 +1,179 @@
+@import "../fonts/fonts.css";
+
+$font-primary: "Cormorant Garamond", Arial, serif;
+$font-secondary: "Nunito Sans", Arial, serif;
+$font-decorative: "Alex Brush", serif;
+
+// Overrides
+$grid-gutter-width: 40px !default;
+$border-radius-base: 4px !default;
+$padding-base-vertical: 14px !default;
+
+$brand-primary: #f3e1e7 !default;
+$brand-secondary: #118df0 !default;
+
+$brand-white: #fff;
+$brand-black: #000;
+$brand-darker: #444;
+$brand-gray: #ccc;
+$brand-lighter: #e9e9e9;
+$brand-body-color: #818892;
+$brand-selection-color: #f9f6f0;
+$brand-overlay-color: #3b3d40;
+$brand-bg-color: $brand-white;
+
+$input-border-focus: $brand-primary !default;
+$form-group-margin-bottom: 30px !default;
+
+// Mixin
+@mixin translateX($translatex) {
+  -moz-transform: translateX($translatex);
+  -webkit-transform: translateX($translatex);
+  -ms-transform: translateX($translatex);
+  -o-transform: translateX($translatex);
+  transform: translateX($translatex);
+}
+@mixin transition($transition) {
+  -moz-transition: all $transition ease;
+  -o-transition: all $transition ease;
+  -webkit-transition: all $transition ease;
+  -ms-transition: all $transition ease;
+  transition: all $transition ease;
+}
+@mixin inline-block() {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin flex() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flexwrap() {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+}
+
+@mixin icomoon() {
+  font-family: "icomoon";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =======================================================
+*
+* 	Template Style 
+*
+* ======================================================= */
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #828282;
+  background: #fff;
+}
+a {
+  color: $brand-primary;
+  @include transition(0.5s);
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $brand-primary;
+    outline: none;
+    text-decoration: none;
+  }
+}
+p {
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+  color: $brand-black;
+  font-family: $font-primary;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+::-webkit-selection {
+  color: $brand-white;
+  background: $brand-primary;
+}
+
+::-moz-selection {
+  color: $brand-white;
+  background: $brand-primary;
+}
+::selection {
+  color: $brand-white;
+  background: $brand-primary;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.section-padding {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1.5px;
+    width: 80px;
+    background-color: $brand-primary;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+@import "header";
+@import "home";
+@import "event-section";
+@import "couple-section";
+@import "gallery-section";
+@import "Rsvp-section";
+@import "footer-section";
