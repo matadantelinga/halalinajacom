@@ -1,6 +1,16 @@
 (function () {
   "use strict";
 
+  var mobileMenu = function () {
+    // Nav mobile
+    $("#humburgerBtn").click(function () {
+      $("#mobileNav").toggle(200);
+    });
+    $(".mobileCloser").click(function () {
+      $(this).parent().hide(200);
+    });
+  };
+
   var heroSlider = function () {
     $("#hero-area > .slick-area").slick({
       infinite: true,
@@ -43,6 +53,7 @@
   };
 
   $(function () {
+    mobileMenu();
     heroSlider();
     goToTop();
     loaderPage();
